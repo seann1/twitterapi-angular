@@ -7,6 +7,12 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 </head>
 <body>
-	<div ng-controller="TwitterCtrl"></div>
+	<div ng-controller="TwitterCtrl">
+		<table class="table table-striped">
+			<tr ng-repeat="tweet in twitterResult.results">
+				<td>{{tweet.text}}</td>
+			</tr>
+		</table>
+	</div>
 </body>
 </html>
